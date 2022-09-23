@@ -42,4 +42,7 @@ io.on("connection", (socket) => {
 server.listen(port, () => {
   console.log(clc.green(`Server listening on port ${port}`));
   console.log(clc.green(`http://localhost:${port}`));
+  console.log("====================================");
+  console.log("Press CTRL + C to stop the server");
+  console.log("====================================");
 });
