@@ -18,3 +18,14 @@ How to use
 2. Run `npm install`
 3. Run `npm start`
 4. Open your browser at `http://localhost:3000`
+
+TODO
+----
+
+- [ ] Add a database
+- [ ] Add a login system
+
+License
+-------
+
+MIT
