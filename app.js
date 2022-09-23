@@ -31,9 +31,10 @@ app.get("/", (req, res) => {
 
 // Socket.io
 io.on("connection", (socket) => {
-  console.log("a user connected");
+  var clientIp = socket.handshake.address.replace("::ffff:", "");
+  console.log(clc.green("New connection from: " + clientIp));
   socket.on("disconnect", () => {
-    console.log("user disconnected");
+    console.log(clc.red(clientIp + " disconnected"));
   });
 });
 
