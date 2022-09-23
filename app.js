@@ -7,6 +7,7 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 var bodyParser = require("body-parser");
 const port = process.env.PORT || 3002;
+const clc = require("cli-color");
 
 //set view engine to ejs
 app.set("view engine", "ejs");
@@ -38,6 +39,6 @@ io.on("connection", (socket) => {
 
 // Run server
 server.listen(port, () => {
-  console.log("listening on *:" + port);
-  console.log("http://localhost:" + port);
+  console.log(clc.green(`Server listening on port ${port}`));
+  console.log(clc.green(`http://localhost:${port}`));
 });
