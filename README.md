@@ -1,4 +1,4 @@
-Template ExpreeJS + Socket.io
+Template ExpressJS + Socket.io
 ============================
 
 This is a template for a web application using ExpressJS and Socket.io.
