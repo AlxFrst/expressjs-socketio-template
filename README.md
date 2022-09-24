@@ -25,10 +25,10 @@ Setting up the PostgreSQL database
 1. Create your database
 2. Create a .env file in the root of the project
 3. Add the following lines to the .env file:
-    DB_USER=YourDatabaseUser
-    DB_PASS=YourDatabasePassword
-    DB_NAME=YourDatabaseName
-    DB_HOST=YourDatabaseHost
+    - DB_USER=YourDatabaseUser
+    - DB_PASS=YourDatabasePassword
+    - DB_NAME=YourDatabaseName
+    - DB_HOST=YourDatabaseHost
 4. Start the application and check if you see the following message in the console:
     Connected to the PostgreSQL database
 5. If you see the message, you are good to go! ENJYOY
